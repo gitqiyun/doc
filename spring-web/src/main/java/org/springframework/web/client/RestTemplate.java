@@ -64,22 +64,7 @@ import org.springframework.web.util.DefaultUriBuilderFactory.EncodingMode;
 import org.springframework.web.util.UriTemplateHandler;
 
 /**
- * Synchronous client to perform HTTP requests, exposing a simple, template
- * method API over underlying HTTP client libraries such as the JDK
- * {@code HttpURLConnection}, Apache HttpComponents, and others.
- *
- * <p>The RestTemplate offers templates for common scenarios by HTTP method, in
- * addition to the generalized {@code exchange} and {@code execute} methods that
- * support of less frequent cases.
- *
- * <p><strong>NOTE:</strong> As of 5.0, the non-blocking, reactive
- * {@code org.springframework.web.reactive.client.WebClient} offers a
- * modern alternative to the {@code RestTemplate} with efficient support for
- * both sync and async, as well as streaming scenarios. The {@code RestTemplate}
- * will be deprecated in a future version and will not have major new features
- * added going forward. See the WebClient section of the Spring Framework reference
- * documentation for more details and example code.
- *
+ * 简化发起HTTP请求以及处理响应的过程，并且支持REST
  * @author Arjen Poutsma
  * @author Brian Clozel
  * @author Roy Clarkson
