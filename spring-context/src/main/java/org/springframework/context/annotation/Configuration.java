@@ -27,7 +27,16 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;
 
+
+
 /**
+ *
+ *从Spring3.0，@Configuration用于定义配置类，可替换xml配置文件，被注解的类内部包含有一个或多个被@Bean注解的方法，
+ *这些方法将会被AnnotationConfigApplicationContext *或AnnotationConfigWebApplicationContext类进行扫描，并用于构建bean定义，初始化Spring容器。
+ *@Configuation等价于<Beans></Beans>
+ *@Bean等价于<Bean></Bean>
+ *@ComponentScan等价于<context:component-scan base-package="com.dxz.demo"/>
+ *
  * Indicates that a class declares one or more {@link Bean @Bean} methods and
  * may be processed by the Spring container to generate bean definitions and
  * service requests for those beans at runtime, for example:
